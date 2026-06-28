@@ -7,9 +7,10 @@ Responsável pelo ciclo de vida da aplicação.
 """
 
 from kivy.app import App
-from kivy.uix.label import Label
+# from kivy.uix.label import Label
 
 from src.engine.engine import Engine
+from src.managers.scene_manager import SceneManager
 
 
 class Application(App):
@@ -26,15 +27,9 @@ class Application(App):
         """
         Inicializa a aplicação.
         """
+        self.title = "Snake Master"
 
         self.engine.initialize()
 
-        self.title = "Snake Master"
-
-        return Label(
-            text="Snake Master\n\nEngine v0.1.0",
-            font_size=28,
-            halign="center",
-            valign="middle",
-        )
+        return SceneManager()
         

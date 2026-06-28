@@ -17,3 +17,16 @@ Todas as mudanças importantes deste projeto serão registradas neste documento.
 ### Changed
 
 - Remoção do emoji inicial
+
+
+## [0.2.0] - Em desenvolvimento
+
+### Added
+
+- SceneManager
+- BaseScene
+- SplashScene
+
+### Changed
+
+- Application agora delega a navegação ao SceneManager.

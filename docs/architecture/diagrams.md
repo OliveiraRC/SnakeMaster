@@ -1,13 +1,16 @@
 # Diagramas da Arquitetura
 
-## Versão 0.1.0
+## Versão 0.2.0
 
 ```text
 main.py
-   │
-   ▼
+    │
+    ▼
 Application
-   │
-   ▼
-Engine
+    │
+    ▼
+SceneManager
+    │
+    ▼
+SplashScene
 ```
