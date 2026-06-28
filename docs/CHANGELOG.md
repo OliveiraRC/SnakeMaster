@@ -26,8 +26,13 @@ Todas as mudanças importantes deste projeto serão registradas neste documento.
 - SceneManager
 - BaseScene
 - SplashScene
+- MainMenuScene
+- Sistema de transição entre cenas
+- Configurações centralizadas
+- FadeTransition
 
 ### Changed
 
 - Application agora delega a navegação ao SceneManager.
 - SplashScene reorganizada para utilizar FloatLayout como layout raiz.
+- A Splash Screen agora navega automaticamente para o Menu Principal.

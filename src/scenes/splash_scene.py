@@ -3,6 +3,8 @@ SplashScene.
 
 Primeira tela exibida pelo Snake Master.
 """
+from kivy.clock import Clock
+from src.config.settings import Settings
 
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.label import Label
@@ -67,4 +69,21 @@ class SplashScene(BaseScene):
         Isso permite que o alinhamento do Label funcione corretamente.
         """
         label.text_size = size
+        
+    def on_enter(self, *args) -> None:
+        """
+        Inicia o temporizador da Splash Screen.
+        """
+        Clock.schedule_once(
+            self.change_to_menu,
+            Settings.SPLASH_DURATION,
+        )
+
+
+    def change_to_menu(self, dt: float) -> None:
+            """
+            Navega para o Menu Principal.
+            """
+            if self.manager is not None:
+                self.manager.current = "menu"
         

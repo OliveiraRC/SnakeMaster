@@ -19,3 +19,20 @@ A SplashScene passou a utilizar um FloatLayout como contêiner raiz, preparando 
 ### Próxima Story
 
 Criar transições entre cenas e implementar uma Splash Screen temporizada.
+
+## Story 2.2
+
+### Objetivo
+
+Implementar a navegação inicial da aplicação.
+
+### Concluído
+
+- MainMenuScene criada.
+- Splash Screen temporizada.
+- FadeTransition implementada.
+- Navegação automática.
+
+### Resultado
+
+A aplicação agora possui um fluxo inicial semelhante ao de um jogo profissional.

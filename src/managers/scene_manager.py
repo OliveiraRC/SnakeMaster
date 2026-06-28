@@ -1,23 +1,26 @@
 """
-Gerenciador de cenas.
+Gerenciador de cenas do Snake Master.
 """
 
-from kivy.uix.screenmanager import ScreenManager
+from kivy.uix.screenmanager import FadeTransition, ScreenManager
 
+from src.scenes.main_menu_scene import MainMenuScene
 from src.scenes.splash_scene import SplashScene
 
 
 class SceneManager(ScreenManager):
     """
-    Gerencia todas as cenas da aplicação.
+    Gerencia todas as telas do jogo.
     """
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, **kwargs) -> None:
+        super().__init__(
+            transition=FadeTransition(duration=0.6),
+            **kwargs,
+        )
 
         self.add_widget(SplashScene())
+        self.add_widget(MainMenuScene())
 
         self.current = "splash"
-        print(self.screen_names)
-        print(self.current)
         

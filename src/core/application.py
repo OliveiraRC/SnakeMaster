@@ -7,7 +7,7 @@ Responsável pelo ciclo de vida da aplicação.
 """
 
 from kivy.app import App
-# from kivy.uix.label import Label
+from src.config.settings import Settings
 
 from src.engine.engine import Engine
 from src.managers.scene_manager import SceneManager
@@ -27,7 +27,7 @@ class Application(App):
         """
         Inicializa a aplicação.
         """
-        self.title = "Snake Master"
+        self.title = Settings.APP_TITLE
 
         self.engine.initialize()
 
