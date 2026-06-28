@@ -30,3 +30,4 @@ Todas as mudanças importantes deste projeto serão registradas neste documento.
 ### Changed
 
 - Application agora delega a navegação ao SceneManager.
+- SplashScene reorganizada para utilizar FloatLayout como layout raiz.
