@@ -36,3 +36,18 @@ Todas as mudanças importantes deste projeto serão registradas neste documento.
 - Application agora delega a navegação ao SceneManager.
 - SplashScene reorganizada para utilizar FloatLayout como layout raiz.
 - A Splash Screen agora navega automaticamente para o Menu Principal.
+
+
+## [0.3.0] - Em desenvolvimento
+
+### Added
+
+- Estrutura inicial do UI Kit.
+- Componente `CenteredLayout`.
+- Componente `TitleLabel`.
+- Componente `SubtitleLabel`.
+- Componente `FooterLabel`.
+
+### Changed
+
+- Definida a arquitetura de componentes reutilizáveis para a interface.
