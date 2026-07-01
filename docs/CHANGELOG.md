@@ -51,3 +51,8 @@ Todas as mudanças importantes deste projeto serão registradas neste documento.
 ### Changed
 
 - Definida a arquitetura de componentes reutilizáveis para a interface.
+
+### Changed
+
+- Criado o componente BaseLabel para centralizar o comportamento comum dos componentes de texto.
+- Os componentes TitleLabel, SubtitleLabel e FooterLabel passaram a herdar de BaseLabel.

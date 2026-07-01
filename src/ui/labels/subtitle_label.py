@@ -2,10 +2,10 @@
 Componente de subtítulo.
 """
 
-from kivy.uix.label import Label
+from src.ui.labels.base_label import BaseLabel
 
 
-class SubtitleLabel(Label):
+class SubtitleLabel(BaseLabel):
     """
     Label utilizado para subtítulos.
     """
@@ -14,13 +14,6 @@ class SubtitleLabel(Label):
         super().__init__(
             text=text,
             font_size=22,
-            halign="center",
-            valign="middle",
             **kwargs,
         )
-
-        self.bind(size=self._update_text_size)
-
-    def _update_text_size(self, *_args) -> None:
-        self.text_size = self.size
         

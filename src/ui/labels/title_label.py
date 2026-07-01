@@ -2,10 +2,10 @@
 Componente de título.
 """
 
-from kivy.uix.label import Label
+from src.ui.labels.base_label import BaseLabel
 
 
-class TitleLabel(Label):
+class TitleLabel(BaseLabel):
     """
     Label utilizado para títulos principais.
     """
@@ -15,13 +15,6 @@ class TitleLabel(Label):
             text=text,
             font_size=34,
             bold=True,
-            halign="center",
-            valign="middle",
             **kwargs,
         )
-
-        self.bind(size=self._update_text_size)
-
-    def _update_text_size(self, *_args) -> None:
-        self.text_size = self.size
         

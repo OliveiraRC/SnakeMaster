@@ -26,3 +26,17 @@ Foi criada a estrutura base do UI Kit, permitindo reutilização e padronizaçã
 ### Observações
 
 Nenhuma alteração visual foi realizada nesta Story. O objetivo foi preparar a arquitetura da interface para as próximas implementações.
+
+## Story 3.1.1
+
+### Status
+
+✅ Concluída
+
+### Objetivo
+
+Eliminar duplicação entre os componentes de texto.
+
+### Resultado
+
+Foi criado o componente BaseLabel, responsável por centralizar o comportamento compartilhado entre os labels reutilizáveis do projeto.
