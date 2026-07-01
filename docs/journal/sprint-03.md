@@ -40,3 +40,14 @@ Eliminar duplicação entre os componentes de texto.
 ### Resultado
 
 Foi criado o componente BaseLabel, responsável por centralizar o comportamento compartilhado entre os labels reutilizáveis do projeto.
+
+
+## Story 3.2
+
+### Status
+
+✅ Concluída
+
+### Resultado
+
+O Menu Principal deixou de ser uma tela temporária e passou a apresentar a estrutura definitiva das opções principais do jogo.

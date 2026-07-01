@@ -56,3 +56,8 @@ Todas as mudanças importantes deste projeto serão registradas neste documento.
 
 - Criado o componente BaseLabel para centralizar o comportamento comum dos componentes de texto.
 - Os componentes TitleLabel, SubtitleLabel e FooterLabel passaram a herdar de BaseLabel.
+
+### Changed
+
+- MainMenuScene redesenhada para utilizar um layout vertical.
+- O menu principal agora apresenta as opções do jogo.
